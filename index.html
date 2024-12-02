@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+   <div class="container">
+      <header>
+        <h1>AI Content Generator</h1>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form id="content-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic for AI content"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <select id="content-type" class="content-type">
+              <option value="poem">Poem</option>
+              <option value="joke">Joke</option>
+              <option value="recipe">Recipe</option>
+              <option value="quote">Quote</option>
+              <option value="destination">Travel Destination</option>
+              <option value="baby-name">Baby Name</option>
+            </select>
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Paris, Funny, Vegan</div>
+        </div>
+        <div class="content hidden" id="content"></div>
+      </main>
+
+    <footer>
+         This AI project was coded by
+      <a href="https://github.com/CharleeWatkins/" target="_blank">Charlee Watkins</a> and
+      is
+      <a
+        href="https://github.com/CharleeWatkins/ai-content-generator.git"
+        target="_blank"
+      >
+        open-sourced on GitHub</a
+      >
+      and is
+      <a href="#" target="_blank">hosted on Netlify</a>.
+    </footer>
+    <script src="src/index.js"></script>
+</body>
+</html>
